@@ -30,16 +30,19 @@ function Home() {
       </div>
 
       <div className="book-box">
-        {livros.map((item) => {
-          return (
-            <article key={item.id} className="artigo">
-              
-              <Link to={`/livros/${item.id}`}>
-                <img src={item.capaURL} alt="capa do Livro" className="img" />
-              </Link>
-            </article>
-          );
-        })}
+      {livros.length > 0 ? (
+               
+               livros.map((item) => {
+                 return (
+                   <article key={item.id} className="artigo">
+                     <Link to={`/livros/${item.id}`}>
+                       <img src={item.capaURL} alt="capa do Livro" className="img" />
+                     </Link>
+                   </article>
+                 );
+               })):(
+                   <Erro/>
+               )}
       </div>
     </div>
   );

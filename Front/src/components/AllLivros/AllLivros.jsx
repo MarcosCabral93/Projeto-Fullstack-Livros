@@ -7,7 +7,7 @@ function AllLivros() {
   const [search, setSearch]=useState('')
   const [livros, setLivros] = useState([]);
   useEffect(() => {
-    if(livros!==0){
+    
     let url="http://localhost:3000/livros/"
    
     if(search.length!==0){
@@ -17,17 +17,18 @@ function AllLivros() {
     const req = async () => {
    await axios.get(url)
      .then((response) => {
+       console.log(response.data.length)
      setLivros(response.data);
-     })
+    
+    
+    })
      .catch((error) => {
-       <Erro/>
+      console.log(error)
      });
  };
 
- req();}
- else{
-   <Erro/>
- }
+ req();
+ 
 }, [search,]);
 
   return (
@@ -40,8 +41,9 @@ function AllLivros() {
        </div>
 
       <div className="book-box">
-       
-        {livros.map((item) => {
+      {livros.length > 0 ? (
+               
+        livros.map((item) => {
           return (
             <article key={item.id} className="artigo">
               <Link to={`/livros/${item.id}`}>
@@ -49,7 +51,9 @@ function AllLivros() {
               </Link>
             </article>
           );
-        })}
+        })):(
+            <Erro/>
+        )}
       </div>
     </div>
   );

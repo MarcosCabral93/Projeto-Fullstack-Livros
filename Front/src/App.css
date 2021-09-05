@@ -1,0 +1,29 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+.App {
+  display: grid;
+  grid-template-rows: 150px 100% 150px;
+  grid-template-areas: "Header" "main" "Footer";
+  min-height: 100vh;
+}
+Header {
+  grid-area: Header;
+}
+main {
+  grid-area: main;
+}
+
+Footer {
+  grid-area: Footer;
+}
+.Titulo1 {
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 30px;
+}

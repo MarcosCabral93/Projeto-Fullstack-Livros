@@ -1,0 +1,29 @@
+footer {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #30ba09;
+}
+
+.social {
+  width: 40px;
+  margin: 10px;
+  filter: invert(99%) sepia(6%) saturate(0%) hue-rotate(243deg) brightness(112%)
+    contrast(100%);
+  transition: 0.1s;
+}
+
+.social:hover {
+  filter: invert(7%) sepia(87%) saturate(3872%) hue-rotate(204deg)
+    brightness(95%) contrast(94%);
+}
+
+@media (max-width: 960px) {
+  footer {
+    margin-bottom: 50px;
+  }
+  .social {
+    width: 35px;
+  }
+}

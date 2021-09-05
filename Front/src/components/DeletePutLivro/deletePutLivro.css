@@ -1,0 +1,27 @@
+.button-section {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.capa-livro {
+  margin-bottom: 50px;
+}
+
+@media (max-width: 960px) {
+  .form-box {
+    max-width: 600px;
+    margin: 200px 50px 50px 50px;
+  }
+  .section-book {
+    max-width: 500px;
+  }
+  .input {
+    width: 100%;
+  }
+  .button-section {
+    max-width: 600px;
+  }
+  form {
+    max-width: 600px;
+  }
+}

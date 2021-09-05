@@ -1,0 +1,30 @@
+{
+  "name": "Livros",
+  "version": "1.0.0",
+  "description": "Projeto designado para o gerenciamento de livros",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MarcosCabral93/Teste_TECH_JGP.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MarcosCabral93/Teste_TECH_JGP.git/issues"
+  },
+  "homepage": "https://github.com/MarcosCabral93/Teste_TECH_JGP.git#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "sequelize": "^6.6.5",
+    "sqlite3": "^5.0.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  }
+}

@@ -1,6 +1,6 @@
 # Projeto-Fullstack-Livros
 
-## Projeto FullStack, criado para consultar, exibir apagar e editar livros.
+## Projeto FullStack, criado para consultar, exibir, apagar e editar livros.
 
 ### Stacks utilizadas
 
